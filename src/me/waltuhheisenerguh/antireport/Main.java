@@ -27,7 +27,6 @@ package me.waltuhheisenerguh.antireport;
 
 
 import me.waltuhheisenerguh.antireport.events.MessageEvent;
-import me.waltuhheisenerguh.antireport.events.EggListener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
@@ -39,10 +38,7 @@ import java.util.HashMap;
 
 public class Main extends JavaPlugin
 {
-	public HashMap<String, String> playerIps;
-
 	private MessageEvent msgevt;
-	private EggListener eggListener;
 
 	private PluginManager mngr = Bukkit.getPluginManager();
 
@@ -51,7 +47,6 @@ public class Main extends JavaPlugin
 	public void onEnable()
 	{
 		mngr.registerEvents(msgevt = new MessageEvent(this), (Plugin)this);
-		mngr.registerEvents(eggListener = new EggListener(this), (Plugin)this);
 	}
 
 

@@ -27,6 +27,7 @@ package me.waltuhheisenerguh.antireport;
 
 
 import me.waltuhheisenerguh.antireport.events.MessageEvent;
+import me.waltuhheisenerguh.antireport.events.EggListener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
